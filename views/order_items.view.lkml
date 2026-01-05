@@ -134,8 +134,8 @@ view: order_items {
 
   measure: latest_order_date {
     description: "latest order date (max date)"
-    type: date_raw
-    sql: max(${created_raw}) ;;
+    type: max
+    sql: (${created_raw}) ;;
   }
 
   measure: first_order_date {

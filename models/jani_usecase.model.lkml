@@ -93,7 +93,5 @@ join: customer_lifetime_measure {
 #view_label: "Order Items"
  type:  left_outer
   sql_on: ${customer_lifetime_measure.user_id}= ${order_items.user_id} ;;
-  relationship: many_to_one
-}
-
+  relationship: many_to_one}
 }
